@@ -1,0 +1,5 @@
+/* Styles go here */
+
+@media print {
+    .panel {page-break-inside: avoid;}
+}
