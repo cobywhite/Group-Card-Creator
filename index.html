@@ -47,7 +47,7 @@
   </nav>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-3" ng-repeat="i in mainCtrl.repeatArray | limitTo:mainCtrl.maxCards">
+      <div class="col-sm-4" ng-repeat="i in mainCtrl.repeatArray | limitTo:mainCtrl.maxCards">
         <div class="panel panel-default" ng-init="index = $index; rank = $index + 1">
       <div class="panel-heading text-center">
         <h1 class="panel-title">{{rank | number}}</h1>
