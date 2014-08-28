@@ -45,10 +45,10 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-4" ng-repeat="i in mainCtrl.repeatArray | limitTo:mainCtrl.maxCards">
-        <div class="panel panel-default" ng-init="index = $index; rank = $index + 1">
+  <div class="container-fluid" ng-init="numRows = (maxCards / 3) + 1">
+    <div class="row" ng-repeat="k in mainCtrl.repeatArray | limitTo:numRows" ng-init="rowIndex = $index;indexOffset = rowIndex * 3;">
+      <div class="col-xs-4" ng-init="numColumns = (indexOffset + 3 < mainCtrl.maxCards) ? 3 : mainCtrl.maxCards - indexOffset"  ng-repeat="i in mainCtrl.repeatArray | limitTo:numColumns">
+        <div class="panel panel-default" ng-init="index = $index + indexOffset; rank = index + 1">
       <div class="panel-heading text-center">
         <h1 class="panel-title">{{rank | number}}</h1>
       </div>
