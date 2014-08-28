@@ -51,7 +51,7 @@
         }
         ];
       vm.groupNameOption = vm.nameOptions[1];
-      vm.maxCards = 80;
+      vm.maxCards = 81;
       vm.maxGroups = 10;
       vm.repeatArray = [];
       var i = 0;
