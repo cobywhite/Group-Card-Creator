@@ -23,8 +23,8 @@
               'green',
               'yellow',
               'orange',
-              'indigo',
-              'violet',
+              'pink',
+              'purple',
               'brown',
               'black',
               'white',
@@ -34,7 +34,7 @@
         {
           name: "animals",
           values: [
-              'aardvark',
+              'ant',
               'buffalo',
               'cat',
               'dog',
